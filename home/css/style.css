@@ -24,9 +24,10 @@ main .container {
 main .container .banner-img {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 main .container .banner-img img {
-  border-radius: 30%;
+  border-radius: 50%;
 }
 main .container .banner-text {
   display: flex;
@@ -86,19 +87,25 @@ main .intro .about {
 }
 @media (min-width: 1000px) {
   p, span {
-    font: bold 20px arial;
+    font: bold 27px arial;
+  }
+  h1 {
+    font: bold clamp(60px, 100%, 70px) arial;
   }
   .container {
-    padding: 2vw;
+    padding: 5vh 0;
   }
   .container .banner-img {
     width: 39vw;
   }
   .container .banner-img img {
-    width: 29vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 20vw;
+    height: 20vw;
   }
   .container .banner-text {
-    gap: 20px;
+    gap: 30px;
     width: 55vw;
   }
   .container .banner-text h1 {
