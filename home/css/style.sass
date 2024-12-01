@@ -1,0 +1,114 @@
+p,h1
+    text-align: center
+    margin: 0
+span
+    color: #000000
+body
+    background: linear-gradient(to bottom ,#ff72ff9b, #ff52ff,#ff28ff,#4f0a4fd4 )
+    height: 100vh
+main
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        background: linear-gradient(to right ,#72c2ff9b, #2de3bc9b )
+        border-radius: 10px
+        margin: 10px 0 0 0
+
+        .banner-img
+            display: flex
+            justify-content: center
+            img
+                border-radius: 30%
+            
+        .banner-text
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            img
+    
+    .intro
+        .about
+            display: flex
+            justify-content: left
+            background: #ebebeb45
+            border-radius: 10px
+            flex-wrap: wrap
+                
+
+//phone
+@media (max-width: 999px) 
+    p,span
+        font: bold clamp(40px, 100%, 2px) arial
+        padding: 0 7%
+    h1
+        font: bold clamp(60px, 100%, 70px) arial
+    .container
+        padding: 100px 0 
+        gap: 60px
+        .banner-img
+            width: 100%
+            img
+                width: 80%
+        .banner-text
+            gap: 40px
+            width: 100%
+            h1
+                
+            .socials 
+                display: flex
+                gap: 30px
+                .social
+                    width: 70px
+    .intro
+        gap: 20px
+        .about
+            
+            padding: 10px
+            width: 85vw
+            gap: 7px
+            span
+                display: flex
+                width: auto
+
+//desktop
+@media (min-width: 1000px)
+    p,span
+        font: bold clamp(20px, 20px, 25px) arial
+    .container
+        padding: 2vw
+        
+        .banner-img
+            width: 39vw
+            img
+                width: 29vw
+        .banner-text
+            gap: 20px
+            width: 55vw
+        
+            h1
+                font: bold arial
+            .socials 
+                display: flex
+                gap: 40px
+                
+                &:has(.fancy) .social:not(.fancy:hover) 
+                    opacity: 40%
+                .social
+                    padding: 5px
+                    width: 30px
+                    border: 3px solid #000000
+                    border-radius: 20%
+    .intro
+        gap: 20px
+        .about
+            padding: 10px
+            width: 43vw
+            gap: 5%
+            span
+                display: flex
+            
+            
+        
