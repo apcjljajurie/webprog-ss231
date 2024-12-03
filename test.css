@@ -1,0 +1,20 @@
+
+.maincontainer{
+    display: flex; 
+    justify-content: center;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    padding: 100px 10px 50px 10px;
+    margin: 100px 10px 50px 10px;
+    align-items: center;
+    background-color: red;
+    
+}
+.container2{
+    display: flex;
+    background-color: blue;
+}
+
