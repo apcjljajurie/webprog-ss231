@@ -2,13 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     background-color: DodgerBlue;
+    
   }
    
   .flex-container > div {
+    display: flex;
     background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    
     line-height: 20px;
     font-size: 15px;
+    font-size:1.4rem;
   }
