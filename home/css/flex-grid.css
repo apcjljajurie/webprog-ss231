@@ -1,0 +1,123 @@
+body {
+  color: white;
+}
+body .container {
+  background: #ff9ae6;
+}
+body .container .header {
+  grid-area: header;
+  border: 5px solid white;
+}
+body .container .header h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+body .container .sidebar {
+  grid-area: sidebar;
+  display: flex;
+  align-items: center;
+  border: 5px solid white;
+  gap: 40px;
+  padding: 20px;
+}
+body .container .sidebar img {
+  fill: white;
+  width: 3rem;
+  filter: brightness(0) invert(1);
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 30%;
+}
+body .container .main {
+  grid-area: main;
+  font-size: 1.5rem;
+  padding: 3rem;
+  border: 5px solid white;
+}
+body .container .main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, rgba(114, 194, 255, 0.6078431373), rgba(45, 227, 188, 0.6078431373));
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  gap: 3rem;
+}
+body .container .main .container .card {
+  display: flex;
+  background: rgba(235, 235, 235, 0.2705882353);
+  padding: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+body .container .main .container .card .imgs {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+body .container .main .container .card span {
+  text-align: center;
+}
+body .container .main .intro {
+  padding: 10px;
+  gap: 10px;
+}
+body .container .main .intro .about {
+  display: flex;
+  background: rgba(235, 235, 235, 0.2705882353);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1000px) {
+  p, span {
+    font: normal 27px arial;
+  }
+  h1 {
+    font: bold clamp(60px, 100%, 70px) arial;
+  }
+  .container {
+    display: grid;
+    grid-template-areas: "header header header header header" "sidebar main main main main" "sidebar main main main main";
+  }
+  .container .sidebar {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .container .main .container .card .imgs {
+    height: 300px;
+    width: 300px;
+  }
+  .container .main .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .main .intro .about {
+    width: 37vw;
+  }
+}
+@media (max-width: 999px) {
+  p, span {
+    font: bold clamp(40px, 100%, 40px) arial;
+    margin: 0;
+  }
+  h1 {
+    font: bold clamp(60px, 100%, 70px) arial;
+  }
+  .container .sidebar {
+    justify-content: center;
+  }
+  .container .main .container .card .imgs {
+    width: 70vw;
+    height: 500px;
+  }
+  .container .main .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .main .intro .about {
+    width: 100%;
+  }
+}/*# sourceMappingURL=flex-grid.css.map */

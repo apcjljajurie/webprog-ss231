@@ -1,19 +1,59 @@
  <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/flexbox.css?version=0.1">
+  <link rel="stylesheet" href="css/flex-grid.css">
   <title>Personal Profile Web Page</title>
 </head>
 <body>
-  <h1>Personal Profile Web Page</h1>
-    <div class="flex-container">
-      <div>1 About Me</div>
-      <div>2 undergrad student</div>
-      <div>3 BSCS SOFTWARE AND SYSTEMS</div>  
-      <div>4 I many unfinnished HTML and CSS. In our research , we made a School Website using HTML, CSS and JS. also know Java and Python.</div>
-      <div>5 I like cats​​, I like to play games (slidey, ml), Reading manga/manhua</div>
-      <div>6 I want to make projects that I like to do and get rich with it</div>  
-      <div>7 I like cats</div> 
+  <div class="container">
+    <div class="header"><h1>Personal Profile Web Pages</h1></div>
+    <div class="sidebar">
+      <img src="img/house-solid.svg" alt="">
+      <img src="img/compass-solid.svg" alt="">
+      <img src="img/address-book-solid.svg" alt="">
+      <img src="img/address-card-solid.svg" alt="">
     </div>
+    <div class="main">
+      <div class="container">
+        <h1>About Me</h1>
+      </div>
+      <div class="intro">
+        <p class="about">Name: John Kenneth Jajurie</p>
+        <p class="about">School: Asia Pacific Colloge</p>
+        <p class="about">Interest/Hobbies: I like cats, I like to watch movies</p>
+        <p class="about">Goals: I want to make projects that I like to do</p>
+        <p class="about">Programming : I have many unfinnished HTML and CSS. In our research , we made a School Website using HTML, CSS and JS. also know Java and Python.</p>
+      </div>
+      <div class="container">
+        <h1>Gallery</h1>
+      </div>
+      <div class="container">
+        <div class="card">
+          <img class="imgs" src="img/cats/laway selfie.jpg" alt="cat">
+          <span>Laway selfie</span>
+        </div>
+        <div class="card">
+          <img class="imgs" src="img/cats/yellowcatpat.jpg" alt="">
+          <span>Ramen cat</span>
+        </div>
+        <div class="card">
+          <img class="imgs" src="img/cats/papay.jpg" alt="">
+          <span>Papay</span>
+        </div>
+        
+        
+        
+      </div>
+      <div class="container">
+        <h1>What projects I want to do</h1>
+      </div>
+      <div class="container intro">
+        <div class="about"><span class="introt">Productivity App</span></div>
+        <div class="about"><span class="introt">Co-op Games</span></div>
+        <div class="about"><span class="introt">AI bots</span></div>
+        <div class="about"><span class="introt">Own Cloud Storage</span></div>
+      </div>
+    </div>
+  </div>
 </body>
 </html> 

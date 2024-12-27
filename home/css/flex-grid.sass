@@ -1,0 +1,120 @@
+body
+    color: white
+    .container
+        
+        background: #ff9ae6
+        .header
+            grid-area: header
+            border: 5px solid white
+            h1
+                text-align: center
+                font-size: 4rem
+        .sidebar
+            grid-area: sidebar
+            display: flex
+            align-items: center
+            border: 5px solid white
+            gap: 40px
+            padding: 20px
+            img
+                fill: white
+                width: 3rem
+                filter: brightness(0) invert(1)
+                border: 5px solid white
+                padding: 10px
+                border-radius: 30%
+        .main
+            grid-area: main
+            font-size: 1.5rem
+            padding: 3rem
+            border: 5px solid white
+            .container
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                background: linear-gradient(to right ,#72c2ff9b, #2de3bc9b )
+                border-radius: 10px
+                margin: 10px 0 0 0
+                padding: 10px   
+                gap: 3rem
+                .card
+                    display: flex
+                    background: #ebebeb45
+                    padding: 10px
+                    border-radius: 10px
+                    flex-direction: column
+                    .imgs
+                        object-fit: cover
+                        
+                        border-radius: 5px
+                    span
+                        text-align: center
+            
+            .intro
+                
+                padding: 10px
+                gap: 10px
+                .about
+                    display: flex
+                    background: #ebebeb45
+                    
+                    padding: 10px
+                    border-radius: 10px
+
+
+//desktop
+@media (min-width: 1000px)
+    p,span
+        font: normal clamp(20px, 27px, 35px) arial
+    h1
+        font: bold clamp(60px, 100%, 70px) arial 
+    .container
+        display: grid
+        grid-template-areas: 'header header header header header' 'sidebar main main main main' 'sidebar main main main main'
+        .sidebar
+            justify-content: start
+            flex-direction: column
+        .main
+            .container
+                
+                .card
+                    .imgs
+                        height: 300px
+                        width: 300px
+                    span
+            .intro
+                display: flex
+                flex-wrap: wrap
+                .about
+                    width: clamp(35vw, 37vw, 45vw)
+
+                    span
+
+//phone
+@media (max-width: 999px) 
+    p,span
+        font: bold clamp(40px, 100%, 40px) arial
+        margin: 0
+    h1
+        font: bold clamp(60px, 100%, 70px) arial
+    .container
+        .sidebar
+            justify-content: center
+        .main
+            .container
+                .card
+                    .imgs
+                        width: 70vw
+                        height: 500px
+                    span
+            .intro
+                
+                display: flex
+                flex-wrap: wrap
+                .about
+                    width: 100%
+                    span
+
+
+                
