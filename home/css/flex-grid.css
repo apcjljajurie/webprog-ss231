@@ -60,11 +60,11 @@ body .container .main .container .card .imgs {
 body .container .main .container .card span {
   text-align: center;
 }
-body .container .main .intro {
+body .container .main .content {
   padding: 10px;
   gap: 10px;
 }
-body .container .main .intro .about {
+body .container .main .content .about {
   display: flex;
   background: rgba(235, 235, 235, 0.2705882353);
   padding: 10px;
@@ -90,11 +90,11 @@ body .container .main .intro .about {
     height: 300px;
     width: 300px;
   }
-  .container .main .intro {
+  .container .main .content {
     display: flex;
     flex-wrap: wrap;
   }
-  .container .main .intro .about {
+  .container .main .content .about {
     width: 37vw;
   }
 }
@@ -110,14 +110,14 @@ body .container .main .intro .about {
     justify-content: center;
   }
   .container .main .container .card .imgs {
-    width: 70vw;
+    width: 35vw;
     height: 500px;
   }
-  .container .main .intro {
+  .container .main .content {
     display: flex;
     flex-wrap: wrap;
   }
-  .container .main .intro .about {
+  .container .main .content .about {
     width: 100%;
   }
 }/*# sourceMappingURL=flex-grid.css.map */
