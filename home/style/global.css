@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html body {
+  height: 180vh;
+  margin: 0;
+}
+html body nav {
+  z-index: 2;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  height: 80px;
+  background-color: #5c2a2a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+html body nav .logo {
+  font: bold 30px Arial;
+  color: #ffc7c7;
+}
+html body nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 60px;
+}
+html body nav ul li a {
+  font: bold 26px new times;
+  text-decoration: none;
+  color: #ffc7c7;
+}
+html body main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 100vh;
+}
+html body main .home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+html body main .banner {
+  position: fixed;
+  display: flex;
+  width: 92vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4d4d4d;
+}
+html body main .banner .imgs {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  opacity: 0.4;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body main .banner .title {
+  position: absolute;
+  font: bold 100px Arial;
+  top: 250px;
+}
+html body main .container1 {
+  color: #dadada;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: 100vh;
+  z-index: 1;
+  height: 70vh;
+  width: 100vw;
+  background-color: #924848;
+}
+html body main .container1 .profile {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  place-items: center;
+}
+html body main .container1 .profile img {
+  width: 300px;
+  border-radius: 100%;
+  height: 300px;
+}
+html body main .container1 .profile .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font: bold 16px Arial;
+  padding: 10px;
+}
+html body main .container1 .profile .intro .card {
+  background-color: #4d4d4d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+html body main .container1 .about {
+  display: flex;
+  padding: 50px;
+  background-color: #4d4d4d;
+  flex-direction: column;
+}
+html body main .container1 .about .card {
+  display: flex;
+  width: 200px;
+  margin: 0 0 30px 0;
+  align-items: center;
+  justify-content: center;
+  left: 35%;
+  height: 4rem;
+  padding: 10px;
+  border-radius: 10px;
+  font: bold 35px Arial;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
+  position: relative;
+}
+html body main .container1 .about .data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 0 30px 0;
+}
+html body main .container1 .about .data .title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
+  width: 120px;
+  padding: 8px;
+  font: bold 25px Arial;
+}
+html body main .container1 .about .data .info {
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
+  font: bold 18px Arial;
+  padding: 8px;
+  margin: 0 0 0 30px;
+}
+html body main .container2 {
+  top: 100vh;
+  position: relative;
+  background-color: #c04242;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  z-index: 3;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 100px;
+}
+html body main .container2 .title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
+  width: 120px;
+  padding: 8px;
+  font: bold 25px Arial;
+}
+html body main .container2 .imgs {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 3;
+  gap: 20px;
+  padding: 15px;
+}
+html body main .container2 .imgs img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body main .container2 .styles {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}/*# sourceMappingURL=global.css.map */
