@@ -48,7 +48,7 @@ html body main .home {
 html body main .banner {
   position: fixed;
   display: flex;
-  width: 92vw;
+  width: 100vw;
   height: 100vh;
   flex-direction: column;
   align-items: center;
