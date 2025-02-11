@@ -1,1 +1,44 @@
-/*# sourceMappingURL=desktop.css.map */
+@media screen and (min-width: 700px) {
+  nav {
+    height: 80px;
+  }
+  nav .logo {
+    font: bold 30px Arial;
+  }
+  nav ul {
+    gap: 100px;
+  }
+  nav ul li a {
+    font: bold 26px new times;
+  }
+  .home .banner img {
+    width: 100vw;
+    height: 100vh;
+  }
+  .home .banner .title {
+    font: bold 100px Arial;
+  }
+  main .container .container1 {
+    height: 70vh;
+  }
+  main .container .container1 .profile img {
+    width: 300px;
+    height: 300px;
+  }
+  main .container .container1 .profile .intro {
+    font: bold 16px Arial;
+    padding: 10px;
+  }
+  main .container .container1 .about .card {
+    left: 35%;
+    margin: 0 0 30px 0;
+    width: 200px;
+    height: 4rem;
+    padding: 10px;
+    font: bold 35px Arial;
+  }
+  main .container2 .imgs img {
+    width: 300px;
+    height: 250px;
+  }
+}/*# sourceMappingURL=desktop.css.map */

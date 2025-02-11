@@ -12,23 +12,22 @@ html
             align-items: center
             width: 100%
             padding: 0 20px
-            height: 80px
+            
             background-color: #5c2a2a
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5)
             .logo
-                font: bold 30px Arial
                 color: #ffc7c7
             ul
                 display: flex
                 list-style: none
                 justify-content: center
                 
-                gap: 60px
+                
                 li
                     a
-                        font: bold 26px new times
                         text-decoration: none
                         color: #ffc7c7
+        
         main
             display: flex
             align-items: center
@@ -48,9 +47,8 @@ html
                 align-items: center
                 background-color: #4d4d4d
                 .imgs
-                    position: absolute
                     top: 100px
-                    width: 100%
+                    width: 100vw
                     height: 100vh
                     top: 0
                     opacity: .4
@@ -59,7 +57,7 @@ html
                 .title
                     
                     position: absolute
-                    font: bold 100px Arial
+                    
                     top: 250px
                 .arrow
             .styles
@@ -70,27 +68,24 @@ html
                 position: relative
                 top: 100vh
                 z-index: 1
-                height: 70vh
                 width: 100vw
+                width: auto
                 background-color: #924848
                 .profile
                     display: grid
                     grid-template-rows: 1.5fr 1fr
                     place-items: center
                     img
-                        width: 300px
                         border-radius: 100%
-                        height: 300px
                     .intro
                         
                         display: flex
                         justify-content: center
                         align-items: center
                         flex-direction: column
-                        font: bold 16px Arial
-                        padding: 10px
                         
-                        .card
+                        
+                        .prof
                             background-color: #4d4d4d
                             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5)
                             border-radius: 10px
@@ -103,15 +98,9 @@ html
                     flex-direction: column
                     .card
                         display: flex
-                        width: 200px
-                        margin: 0 0 30px 0
                         align-items: center
                         justify-content: center
-                        left: 35%
-                        height: 4rem
-                        padding: 10px
                         border-radius: 10px
-                        font: bold 35px Arial
                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438)
                         position: relative
                     .data
@@ -141,9 +130,8 @@ html
                 display: grid
                 grid-template-rows: 1fr 1fr
                 z-index: 3
-                width: 100vw
                 min-height: 100vh
-                padding: 100px
+                
                 .title
                     display: flex
                     align-content: center
@@ -162,8 +150,7 @@ html
                     gap: 20px
                     padding: 15px
                     img
-                        width: 300px
-                        height: 250px
+                        
                         border-radius: 10px
                         object-fit: cover
                 .styles

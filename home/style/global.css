@@ -14,22 +14,18 @@ html body nav {
   align-items: center;
   width: 100%;
   padding: 0 20px;
-  height: 80px;
   background-color: #5c2a2a;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 html body nav .logo {
-  font: bold 30px Arial;
   color: #ffc7c7;
 }
 html body nav ul {
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 60px;
 }
 html body nav ul li a {
-  font: bold 26px new times;
   text-decoration: none;
   color: #ffc7c7;
 }
@@ -55,9 +51,8 @@ html body main .banner {
   background-color: #4d4d4d;
 }
 html body main .banner .imgs {
-  position: absolute;
   top: 100px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   top: 0;
   opacity: 0.4;
@@ -66,7 +61,6 @@ html body main .banner .imgs {
 }
 html body main .banner .title {
   position: absolute;
-  font: bold 100px Arial;
   top: 250px;
 }
 html body main .container1 {
@@ -76,8 +70,8 @@ html body main .container1 {
   position: relative;
   top: 100vh;
   z-index: 1;
-  height: 70vh;
   width: 100vw;
+  width: auto;
   background-color: #924848;
 }
 html body main .container1 .profile {
@@ -86,19 +80,15 @@ html body main .container1 .profile {
   place-items: center;
 }
 html body main .container1 .profile img {
-  width: 300px;
   border-radius: 100%;
-  height: 300px;
 }
 html body main .container1 .profile .intro {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font: bold 16px Arial;
-  padding: 10px;
 }
-html body main .container1 .profile .intro .card {
+html body main .container1 .profile .intro .prof {
   background-color: #4d4d4d;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -112,15 +102,9 @@ html body main .container1 .about {
 }
 html body main .container1 .about .card {
   display: flex;
-  width: 200px;
-  margin: 0 0 30px 0;
   align-items: center;
   justify-content: center;
-  left: 35%;
-  height: 4rem;
-  padding: 10px;
   border-radius: 10px;
-  font: bold 35px Arial;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.438);
   position: relative;
 }
@@ -153,9 +137,7 @@ html body main .container2 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   z-index: 3;
-  width: 100vw;
   min-height: 100vh;
-  padding: 100px;
 }
 html body main .container2 .title {
   display: flex;
@@ -177,8 +159,6 @@ html body main .container2 .imgs {
   padding: 15px;
 }
 html body main .container2 .imgs img {
-  width: 300px;
-  height: 250px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;

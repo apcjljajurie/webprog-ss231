@@ -1,0 +1,46 @@
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  nav {
+    height: 60px;
+  }
+  nav .logo {
+    font: bold 15px Arial;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  nav ul li a {
+    font: bold 15px Arial;
+  }
+  .banner img {
+    width: 100vw;
+  }
+  .banner .title {
+    font: bold 40px Arial;
+  }
+  main .container .container1 {
+    height: 50vh;
+  }
+  main .container .container1 .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  main .container .container1 .profile .intro {
+    font: bold 10px Arial;
+    padding: 10px;
+  }
+  main .container .container1 .about .card {
+    left: 23%;
+    margin: 0 0 30px 0;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    font: bold 15px Arial;
+  }
+  main .container2 .imgs img {
+    width: 190px;
+    height: 120px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
